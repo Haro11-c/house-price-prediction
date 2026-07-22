@@ -1,18 +1,14 @@
 // File location: src/app/page.tsx
 import Header from "@/components/Header";
-import Sidebar from "@/components/Sidebar";
 import HousePredictionForm from "@/components/HousePredictionForm";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-full flex-col bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Header />
-      <div className="flex flex-1 overflow-hidden">
-        <Sidebar />
-        <main className="flex flex-1 items-center justify-center overflow-y-auto px-4 py-10">
-          <HousePredictionForm />
-        </main>
-      </div>
+      <main className="flex justify-center px-4 py-8 sm:px-6 sm:py-12 lg:py-16">
+        <HousePredictionForm />
+      </main>
     </div>
   );
 }
